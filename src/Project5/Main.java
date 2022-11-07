@@ -41,7 +41,7 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        int[] num = {21, 48, 17, 64, 99, 420, 54};
+        int[] num = {21, 48, 17, 64, 99, 420, 54, 354, 1, 51};
         Main sort = new Main();
         sort.bubbleSort(num, num.length);
         System.out.println(Arrays.toString(num));
