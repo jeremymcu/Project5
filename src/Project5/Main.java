@@ -15,15 +15,13 @@ public class Main {
         for (int i=0; i<len-1; i+=1){
             stack2.push(stack1.pop());
             for (int j=0; j<len-i-1; j+=1){
-                while(!stack1.isEmpty()){
-                    if(stack1.peek()>stack2.peek()){
-                        stack2.push(stack1.pop());
-                    }
-                    else{
-                        int temp = stack2.pop();
-                        stack2.push(stack1.pop());
-                        stack2.push(temp);
-                    }
+                if(stack1.peek()>stack2.peek()){
+                    stack2.push(stack1.pop());
+                }
+                else{
+                    int temp = stack2.pop();
+                    stack2.push(stack1.pop());
+                    stack2.push(temp);
                 }
             }
 
